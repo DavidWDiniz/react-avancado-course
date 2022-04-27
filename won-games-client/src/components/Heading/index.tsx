@@ -1,13 +1,14 @@
 import * as S from './styles';
+import { ReactNode } from 'react';
 
 export type LineColors = 'primary' | 'secondary';
 
 export type HeadingProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   color?: 'black' | 'white';
   lineLeft?: boolean;
   lineBottom?: boolean;
-  size?: 'small' | 'medium';
+  size?: 'small' | 'medium' | 'huge';
   lineColor?: LineColors;
 };
 
